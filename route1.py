@@ -6,17 +6,21 @@ if __name__ == '__main__':
 
     st.text('Find the numbers that are not arabic and sum them up to get the next hint.')
 
-    num = st.number_input('Your number is: ')
 
-    if num == 14:
+    if 'num' not in st.session_state:
+        st.session_state.num = 0
+    st.session_state.num = st.number_input('Your number is: ')
+
+    if st.session_state.num == 14:
         st.text('I am the everlasting memory of unthinkable horror.\nWhat I am telling you is more than 100 years in the past!\n')
         st.text('Do not know where I am? Look where this city has its garden ;)')
 
         st.text('Find the equation on me and tell me the result')
+        if 'num_eq' not in st.session_state:
+            st.session_state.num_eq = 0
+        st.session_state.num_eq = st.number_input('Result: ')
 
-        num_eq = st.number_input('Result: ')
-
-        if num_eq == 1896:
+        if st.session_state.num_eq == 1896:
 
             st.text('Seek the Alter Simon and ask the bartender for advice.')
             st.text('Your codeword is: Herrengedeck')
