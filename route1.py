@@ -8,7 +8,7 @@ if __name__ == '__main__':
 
     num = st.number_input('Your number is: ')
 
-    if num == 10:
+    if num == 14:
         st.text('I am the everlasting memory of unthinkable horror.\nWhat I am telling you is more than 100 years in the past!\n')
         st.text('Do not know where I am? Look where this city has its garden ;)')
 
