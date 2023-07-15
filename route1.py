@@ -15,7 +15,8 @@ if __name__ == '__main__':
         st.text('I am the everlasting memory of unthinkable horror.\nWhat I am telling you is more than 100 years in the past!\n')
         st.text('Do not know where I am? Look where this city has its garden ;)')
 
-        st.text('Find the equation on me and tell me the result')
+        st.text('Do the math and tell me the result')
+        
         if 'num_eq' not in st.session_state:
             st.session_state.num_eq = 0
         st.session_state.num_eq = st.number_input('Result: ')
